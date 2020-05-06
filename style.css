@@ -1,4 +1,4 @@
-/*Polices, couleurs*/
+/*Polices, couleurs, font-size*/
 p
 {
     font-family: 'Rubik', sans-serif;
@@ -35,8 +35,7 @@ p
 
 /*marges, largeurs*/
 body
-{
-    
+{ 
     margin :0 auto;
 }
 #container
@@ -91,7 +90,7 @@ body
     display: flex;
     justify-content: baseline;
     align-items: center;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;  
 }
 .alignement-lower
 {
@@ -179,3 +178,25 @@ body
     text-align: right;
 }
 
+@media screen and (min-width:320px) and (max-width:414px)
+{
+    #container
+    {
+        max-width : 414px;
+        margin: auto;
+        background-color: #0E3B84;
+    }
+    .disapear
+    {
+        display: none;
+    }
+}
+@media screen and (min-width:415px) and (max-width:1140px)
+{
+    #container
+    {
+    max-width : 1140px;
+    margin: auto;
+    background-color: #0E3B84;
+    }
+}
