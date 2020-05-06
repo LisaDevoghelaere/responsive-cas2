@@ -1,7 +1,4 @@
-body
-{
-    margin :0;
-}
+/*Polices, couleurs*/
 p
 {
     font-family: 'Rubik', sans-serif;
@@ -17,33 +14,98 @@ p
     color : white;
     font-size: 1.25rem;
 }
-li
+.liste-footer
 {
+    padding-left: 0px;
+    line-height: 2.5;
     list-style: none;
     line-height: 30px;
+    color : white;
 }
-a
+.liste-footer>li>a
 {
     text-decoration: none;
     font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    font-size: 1.125;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: white;
+    line-height: 2.5;
     padding: 0.8rem;
 }
 
-.alignement-footer
+/*marges, largeurs*/
+body
 {
+    
+    margin :0 auto;
+}
+#container
+{
+    max-width : 1280px;
+    margin: auto;
+    background-color: #0E3B84;
+}
+#footer1
+{
+    border-top: 0.5px solid #b4b0b4;
+    padding: 1.5rem;
+    font-size: 0.7rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
 }
-#footer1, #footer2
+
+.bloc-footer
 {
-    border-top: 0.5px solid #b4b0b4;
-    padding-top: 8%;
-    font-size: 0.7rem;
+    flex : 15%;
+    padding : 2rem;
 }
+.bloc-footer1
+{
+    flex : 20%;
+    padding: 2rem;
+    line-height: 2;
+}
+#lower
+{
+    font-size: 0.7rem;
+    background-color:rgba(0, 0, 0, 0.1);
+    width : 100%;
+    box-sizing: content-box;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#lower p
+{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+/*flex,*/
+
+.alignement-reseau
+{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-wrap: wrap;   
+}
+.alignement-lower
+{
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    flex-wrap: wrap; 
+    flex-direction: row;  
+}
+.alignement-lower>p
+{
+    padding: 10px;
+}
+
+/*Particularités*/
 .bloc-reseau
 {
     height: 45px;
@@ -60,7 +122,7 @@ a
 }
 .twitter-icon
 {
-    background-image: url(media/twitter-orange.png);
+    background-image: url(media/twitter.png);
 }
 .p-icon
 {
@@ -80,52 +142,13 @@ a
     background-repeat: no-repeat;
     background-position: center;
 }
-.fb-icon:hover
-{
-    background-image: url(media/facebook-blanc.png);
-}
-.twitter-icon:hover
-{
-    background-image: url(media/twitter.png);
-}
-.p-icon:hover
-{
-    background-image: url(media/pinterest-blanc.png);
-}
-.dev-icon:hover
-{
-    background-image: url(media/deviantart-blanc.png);
-}
-.bloc-footer
-{
-    flex : 20%;
-}
-.bloc-footer1
-{
-    flex : 20%;
-    padding-right: 10%;
-    line-height: 2;
-}
-.liste-footer>li>a
-{
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    font-size: 0.9rem;
-    color: #6B6D73;
-    line-height: 2.5;
-}
-.liste-footer
-{
-    padding-left: 0px;
-    line-height: 2.5;
-}
 #email
 {
-    padding: 0.8rem;
+    padding-left: 0.8rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
     border-radius : 25px; 
-    border-color: rgb(161, 164, 173);
     border-style: none; 
-    border: 1px solid;
     width: 100%;
     margin-top: 1.5rem;
     font-family: 'Rubik', sans-serif;
@@ -154,25 +177,4 @@ a
 {
     text-align: right;
 }
-.alignement-lower
-{
-    display: flex;
-    justify-content: right;
-    align-items: flex-end;
-    flex-wrap: wrap; 
-    flex-direction: row;  
-}
-.alignement-lower>p
-{
-    padding: 10px;
-}
-.alignement-lower:first-child
-{
-    display: block;
-    align-self: flex-start;
-}
-#lower
-{
-    font-size: 0.7rem;
-    border-top: 0.5px solid #b4b0b4;
-}
+
