@@ -190,6 +190,46 @@ body
     {
         display: none;
     }
+    #footer1
+    {
+        border-top: 0.5px solid #b4b0b4;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        font-size: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: auto;
+    }
+    #lower
+    {
+        width: 80%;
+        margin:auto;
+        display: flex; 
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #lower>p, #lower>div>p
+    {
+        margin: 0rem;
+        font-size: 0.7rem;
+        padding-top : 0px;
+    }
+    .alignement-lower
+    {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-wrap: wrap; 
+        flex-direction: row; 
+        padding: 0px; 
+    }
+    
 }
 @media screen and (min-width:415px) and (max-width:1140px)
 {
